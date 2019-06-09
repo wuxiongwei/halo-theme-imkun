@@ -1,0 +1,205 @@
+/* Color define */
+.red {
+    background: linear-gradient(270deg, rgba(255, 115, 155, .7), #ff739b)
+}
+
+.red1 {
+    background: linear-gradient(135deg, #FEB692 0%, #EA5455 100%);
+}
+
+.orange {
+    background: linear-gradient(270deg, rgba(255, 150, 0, .7), #ff9600)
+}
+
+.green {
+    background: linear-gradient(270deg, rgba(0, 185, 90, .7), #00b95a)
+}
+
+.green1 {
+    background: linear-gradient(135deg, #81FBB8 0%, #28C76F 100%)
+}
+
+
+.cyan {
+    background: linear-gradient(270deg, rgba(0, 200, 200, .7), #00c8c8)
+}
+
+.blue {
+    background: linear-gradient(270deg, rgba(75, 150, 220, .7), #4b96dc)
+}
+
+.blue1 {
+    background: linear-gradient(135deg, #ABDCFF 0%, #0396FF 100%);
+}
+
+.purple {
+    background: linear-gradient(270deg, rgba(210, 115, 230, .7), #d273e6)
+}
+
+.purple1 {
+    background: linear-gradient(135deg, #E2B0FF 0%, #9F44D3 100%);
+}
+.gray {
+    color: #868e9f;
+}
+
+.extra-1-font-size {
+    font-size: 12px;
+}
+
+.im-cover-animate {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+h3 {
+    font-size: 14px;
+}
+
+html {
+    overflow-x: hidden;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: Ubuntu, -apple-system,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Arial,sans-serif;
+
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: rgb(119, 139, 161);
+}
+
+::selection {
+    color: #fff;
+    background-color: #B0D4FC;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0 auto;
+    color: #313131;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f4f5f5;
+    font-size: 14px;
+}
+
+body > :first-child {
+    margin-top: 0 !important
+}
+
+body > :last-child {
+    margin-bottom: 0 !important
+}
+
+body,button,input,select,textarea {
+    font-family: Ubuntu, Roboto, "Open Sans", "Microsoft YaHei", sans-serif
+}
+
+a:visited,
+a:active
+{
+    color: #000;
+}
+a:hover {
+    color: #1485FE;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul,li {
+    list-style: none;
+}
+body {
+    background-color: #f4f5f5;
+}
+.header {
+    background-color: #fff;
+    height: 50px;
+    z-index: 1;
+}
+
+body {
+    background-color: #f4f5f5;
+}
+
+.article-title-name {
+    background-image: -webkit-linear-gradient(0deg,#0396FF 0%,#a86af9 100%);
+    background-image: linear-gradient(90deg,#0396FF 0%,#a86af9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.im-tags li:not(:first-child) {
+    margin-top: 20px;
+}
+.im-tags li>a{
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    font-size: 16px;
+
+}
+.im-tags li>a:hover {
+    /*height: 55px;*/
+    transition: all .5s ease;
+    /*line-height: 55px;*/
+    box-shadow: 3px 4px 12px 0 rgba(94, 94, 99, 0.2);
+    color: #000;
+}
+.im-tags li>a>div:first-child {
+    flex: 1;
+}
+.im-tags li>a>div>.im-icon {
+}
+.im-tags li>a>div>.im-icon {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.im-tags li>a>div>.im-icon .fab {
+    font-size: 35px;
+    line-height: 50px;
+}
+.im-tags li>a>div:last-child {
+    flex: 5;
+}
+@font-face {
+    font-family: 'Inconsolata Patched';
+    src: local('Inconsolata Patched'), url('https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf');
+}
+

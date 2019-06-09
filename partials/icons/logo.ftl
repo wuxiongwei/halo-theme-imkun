@@ -1,0 +1,1 @@
+<img src="/${themeName}/images/svg/logo.svg" alt="">

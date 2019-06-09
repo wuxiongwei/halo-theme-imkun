@@ -1,0 +1,149 @@
+.timeline {
+    line-height: 1.4em;
+    list-style: none;
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    width: 100%;
+}
+.timeline h3 {
+    line-height: inherit;
+    margin-top: 0;
+    font-size: 22px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 600;
+}
+.timeline-item {
+    padding-left: 60px;
+    position: relative;
+}
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+.timeline-item:before {
+    content: attr(data-date);
+    text-align: right;
+    font-size: 11px;
+}
+.timeline-info {
+    letter-spacing: 1px;
+    margin: 0 0 0.5em 0;
+    white-space: nowrap;
+    color: #bbbbbb;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.timeline-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+}
+.timeline-marker:before {
+    background: #1485FE;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    transition: 0.3s ease-in-out, border 0.3s ease-in-out;
+    opacity: .5;
+}
+.timeline-marker:after {
+    content: "";
+    width: 3px;
+    background-color: #1485FE;
+    display: block;
+    position: absolute;
+    top: 9px;
+    bottom: 0;
+    left: 2px;
+    height: 100%;
+    z-index: -1;
+    opacity: .1;
+}
+.timeline-item:last-child .timeline-marker:after {
+    content: none;
+}
+.timeline-marker--incompleted:before {
+    background: #ffffff !important;
+    border: 3px solid #cbd5da;
+}
+.timeline-marker--incompleted:after {
+    border-width: 2px;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-color: #fff;
+    border-style: dashed;
+    background-color: #ccd5db;
+}
+.timeline-content {
+    padding-bottom: 20px;
+}
+.timeline-content p:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:hover::before ,
+.timeline-item:hover .timeline-marker::before ,
+.timeline-item:hover p {
+    color: #1485FE !important;
+    cursor: pointer;
+}
+.timeline-marker:hover::before {
+    color: #1485FE !important;
+}
+@media (min-width: 768px) {
+    .timeline-split .timeline {
+        display: table;
+    }
+    .timeline-split .timeline-item {
+        display: table-row;
+        padding: 0;
+    }
+    .timeline-split .timeline-info,
+    .timeline-split .timeline-marker,
+    .timeline-split .timeline-content,
+    .timeline-split .period .timeline-info {
+        display: table-cell;
+        vertical-align: top;
+    }
+    .timeline-split .timeline-marker {
+        position: relative;
+    }
+    .timeline-split .timeline-content {
+        padding-left: 5px;
+    }
+    .timeline-split .timeline-info {
+        padding-right: 10px;
+    }
+    .timeline-split .period .timeline-title {
+        position: relative;
+        left: -45px;
+    }
+}
+
+.blue-marker:after {
+    background: none;
+    border: 2px solid #739ad9;
+}
+.blue-marker:before {
+    background-color: #739ad9;
+}
+
+div.timeline-content > p {
+    width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+

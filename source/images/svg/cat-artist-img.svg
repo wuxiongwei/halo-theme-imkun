@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Creators Page 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="997" y="806" width="299" height="60"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Creators-Page-2" transform="translate(-1010.000000, -817.000000)">
+            <g id="Rectangle-21">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <rect stroke-opacity="0.5" stroke="#E1E1E1" stroke-width="1" x="997.5" y="806.5" width="298" height="59"></rect>
+            </g>
+            <g id="009-palette" transform="translate(1013.000000, 819.000000)" fill-rule="nonzero">
+                <path d="M28.5945813,15.2251219 C25.3811113,11.4446596 22.0274048,10.5658075 22.0274048,6.39705132 C22.0274048,1.8535612 18.310588,-1.63063107 11.8052524,0.795040226 C4.83015837,3.39586044 0,9.66929927 0,17.485108 C0,27.1582721 7.59555538,35 16.9652062,35 C18.5062352,35 19.9993785,34.7878438 21.4185044,34.3903688 L21.4180939,34.3885325 C28.5945813,32.245642 34.477677,22.1463292 28.5945813,15.2251219 Z M21.3775963,13.3967932 C20.3856106,14.707232 17.6378629,13.9410967 16.5774007,12.0869194 C15.6426726,10.4526669 15.984713,8.11555885 17.6027011,7.08514645 C18.540576,6.48787451 19.7774627,7.07561214 20.0127865,8.18703091 C20.2043292,9.09144908 20.5971968,10.2119078 21.3972978,11.237094 C21.8849107,11.8621214 21.8563161,12.7644208 21.3775963,13.3967932 Z" id="Shape" fill="#E6BE94"></path>
+                <circle id="Oval" fill="#FF4F19" cx="9" cy="9" r="3"></circle>
+                <circle id="Oval" fill="#FF8C62" cx="10.5" cy="9.5" r="1.5"></circle>
+                <circle id="Oval" fill="#FFCD00" cx="7" cy="18" r="3"></circle>
+                <circle id="Oval" fill="#FFE671" cx="7.5" cy="17.5" r="1.5"></circle>
+                <circle id="Oval" fill="#00C37A" cx="9" cy="26" r="3"></circle>
+                <circle id="Oval" fill="#60DC4D" cx="10.5" cy="25.5" r="1.5"></circle>
+                <circle id="Oval" fill="#4CD7FF" cx="19" cy="28" r="3"></circle>
+                <circle id="Oval" fill="#AEEFFF" cx="19.5" cy="28.5" r="1.5"></circle>
+                <circle id="Oval" fill="#009BCA" cx="25" cy="22" r="3"></circle>
+                <circle id="Oval" fill="#4CD7FF" cx="26.5" cy="21.5" r="1.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
