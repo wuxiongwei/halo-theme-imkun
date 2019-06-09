@@ -13,7 +13,7 @@
                             <div class="timeline-marker blue-marker"></div>
                             <div class="timeline-content">
                                 <p>
-                                    <a href="#${post.createTime?string("yyyy-MM-dd HH:mm:ss.SSS")}">${post.title}</a>
+                                    <a href="#${post.createTime?string("yyyy-MM-dd hh:mm:ss")}">${post.title}</a>
                                 </p>
                             </div>
                         </li>
