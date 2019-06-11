@@ -1,3 +1,4 @@
+<#import "module/functions.ftl" as fun>
 <#include "default.ftl" />
 <link rel="stylesheet" href="${static!}/source/css/pagination.css"></link>
 <#include "module/widget/post-card.ftl">
@@ -6,6 +7,17 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <@default title="${options.blog_title!}" keyword="${options.seo_keywords!}" desc="${options.seo_desc!}" canonical="${options.blog_url}" body_class="home-template" />
 <#include "module/menu.ftl" />
+<div class="im-m-tags" >
+    <div>
+        <@tagTag method="list">
+            <#list tags as tag>
+                <div class="<@fun.randBgColor />">
+                    <a href="${context!}/tags/${tag.slugName}">${tag.name}(${tag.postCount!0})</a>
+                </div>
+            </#list>
+        </@tagTag>
+    </div>
+</div>
 <div id="k-container">
     <aside>
         <div class="im-profile">
@@ -123,7 +135,7 @@
                                 <#elseif tag.name == "java" >
                                     <div class="im-icon" ><i class="fab fa-java"></i></div>
                                 <#else >
-                                        <div class="im-icon" ><i class="fab fa-dev"></i></div>
+                                        <div class="im-icon" ><i class="fab <@fun.randBgIco />"></i></div>
                                 </#if>
                             </div>
                             <div class="im-label">

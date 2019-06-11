@@ -289,6 +289,25 @@ form {
     font-size: 1.1rem !important;
 }
 
+.im-m-tags {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.im-m-tags>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.im-m-tags>div>div {
+    display: block;
+    /*flex: 1;*/
+    text-align: center;
+    width: 100px;
+    margin-top: 10px;
+}
 @media only screen and (max-width: 500px) {
     header {
         display: none;
@@ -307,5 +326,26 @@ form {
     #k-content {
         margin: 0;
         width: 100%;
+    }
+
+
+    .im-m-tags {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .im-m-tags>div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .im-m-tags>div>div {
+        display: block;
+        /*flex: 1;*/
+        text-align: center;
+        width: 100px;
+        margin-top: 10px;
     }
 }
