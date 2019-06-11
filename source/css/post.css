@@ -355,3 +355,15 @@ code[class*="language-"], pre[class*="language-"] {
 .copyright {
     font-size: 14px;
 }
+
+@media only screen and (max-width: 500px) {
+
+    code[class*="language-"], pre[class*="language-"] {
+        width: 100%;
+    }
+
+    code[class*="language-"], pre[class*="language-"] {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

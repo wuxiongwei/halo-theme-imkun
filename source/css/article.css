@@ -288,3 +288,24 @@ form {
 .profile-num {
     font-size: 1.1rem !important;
 }
+
+@media only screen and (max-width: 500px) {
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+
+    }
+    aside {
+        display: none;
+    }
+    #k-container
+    {
+        width: 95%;
+    }
+    #k-content {
+        margin: 0;
+        width: 100%;
+    }
+}

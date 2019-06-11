@@ -205,8 +205,7 @@ aside .im-weight-block-3:not(:first-child) {
 }
 
 .im-weight-block-3-inner > .im-weight-3-image>a>img {
-    width: 220px;
-    height: 170px;
+    width: 200px;
     transition: all .3s ease;
     border-radius: 2px;
     box-shadow: 3px 4px 12px 0 rgba(0, 0, 0, .2);
@@ -368,4 +367,44 @@ aside .im-weight-block-3:not(:first-child) {
     margin-top: 20px;
     background-color: #fff;
     padding: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    .im-weight-block-2 {
+        background-color: #fff;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .im-weight-block-2 .im-card-2-img {
+        flex: 1;
+        position: relative;
+    }
+
+    .im-weight-block-2 .im-card-2-img img {
+        position: absolute;
+        top: -15px;
+        left: 5%;
+        display: block;
+        width: 90%;
+        height: 180px;
+        transition: all .3s ease;
+        border-radius: 2px;
+        box-shadow: 3px 4px 12px 0 rgba(0, 0, 0, .2);
+    }
+
+    .im-weight-block-2 .im-card-2-post {
+        flex: 1;
+        padding: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 8px;
+    }
+
+    .im-post-list:not(:first-child) {
+        margin-top: 40px;
+    }
+
+
 }
