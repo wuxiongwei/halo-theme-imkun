@@ -289,10 +289,7 @@ form {
     font-size: 1.1rem !important;
 }
 
-.im-m-tags {
-    width: 1110px;
-    margin: 0 auto;
-}
+
 
 
 .im-m-tags>div {
@@ -300,7 +297,7 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .im-m-tags>div>div {
@@ -309,6 +306,10 @@ form {
     text-align: center;
     width: 100px;
     margin-top: 10px;
+    margin-right: 10px;
+}
+.im-m-tags>div>div>a {
+    text-transform: uppercase;
 }
 @media only screen and (max-width: 500px) {
     /*header#navbar {*/
@@ -328,19 +329,21 @@ form {
     #k-content {
         margin: 0;
         width: 100%;
+        margin-left: 0px !important;
     }
 
 
     .im-m-tags {
         width: 95%;
         margin: 0 auto;
+        margin-bottom: 30px;
     }
 
     .im-m-tags>div {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        /*justify-content: space-around;*/
     }
 
     .im-m-tags>div>div {
@@ -348,12 +351,15 @@ form {
         /*flex: 1;*/
         text-align: center;
         width: 100px;
-        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1140px) {
     #k-container,.im-m-tags {
         width: 90%;
+    }
+    #k-content {
+        margin-left: 20px;
     }
 }

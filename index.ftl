@@ -7,17 +7,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <@default title="${options.blog_title!}" keyword="${options.seo_keywords!}" desc="${options.seo_desc!}" canonical="${options.blog_url}" body_class="home-template" />
 <#include "module/menu.ftl" />
-<div class="im-m-tags" >
-    <div>
-        <@tagTag method="list">
-            <#list tags as tag>
-                <div class="<@fun.randBgColor />">
-                    <a href="${context!}/tags/${tag.slugName}">${tag.name}(${tag.postCount!0})</a>
-                </div>
-            </#list>
-        </@tagTag>
-    </div>
-</div>
+
 <div id="k-container">
     <aside>
         <div class="im-profile">
@@ -95,6 +85,17 @@
         </div>
     </aside>
     <div id="k-content">
+        <div class="im-m-tags" >
+            <div>
+                <@tagTag method="list">
+                    <#list tags as tag>
+                        <div class="<@fun.randBgColor />">
+                            <a href="${context!}/tags/${tag.slugName}">${tag.name}</a>
+                        </div>
+                    </#list>
+                </@tagTag>
+            </div>
+        </div>
         <div id="article-post">
             <#list posts.content as post>
                 <@post_card post></@post_card>
