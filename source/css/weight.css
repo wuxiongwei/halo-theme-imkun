@@ -406,5 +406,15 @@ aside .im-weight-block-3:not(:first-child) {
         margin-top: 40px;
     }
 
+    .im-weight-block-2 .im-card-2-post {
+        width: 96%;
+        margin: 0 auto;
+    }
 
+}
+
+@media only screen and (max-width: 1000px) {
+    aside:first-child {
+        display: none;
+    }
 }

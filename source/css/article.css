@@ -298,7 +298,8 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .im-m-tags>div>div {
@@ -309,9 +310,9 @@ form {
     margin-top: 10px;
 }
 @media only screen and (max-width: 500px) {
-    header {
-        display: none;
-    }
+    /*header#navbar {*/
+    /*    display: none;*/
+    /*}*/
     footer {
         display: none;
 
@@ -347,5 +348,11 @@ form {
         text-align: center;
         width: 100px;
         margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #k-container,.im-m-tags {
+        width: 90%;
     }
 }

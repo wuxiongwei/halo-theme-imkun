@@ -1,4 +1,4 @@
-<header>
+<header class="navbar">
     <div class="im-menu">
         <div class="im-inner-menu">
             <div class="im-flex">
