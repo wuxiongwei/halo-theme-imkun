@@ -354,8 +354,53 @@ form {
         margin-bottom: 10px;
     }
 }
+@media only screen and (max-width: 800px) {
+    /*header#navbar {*/
+    /*    display: none;*/
+    /*}*/
+    footer {
+        display: none;
 
-@media only screen and (max-width: 1140px) {
+    }
+    aside:first-child {
+        display: none;
+    }
+    #k-container
+    {
+        width: 95%;
+        margin-top: 50px;
+    }
+    #k-content {
+        margin: 0;
+        width: 100%;
+        margin-left: 0px !important;
+        margin-right: 20px;
+    }
+
+
+    .im-m-tags {
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .im-m-tags>div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*justify-content: space-around;*/
+    }
+
+    .im-m-tags>div>div {
+        display: block;
+        /*flex: 1;*/
+        text-align: center;
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+}
+@media only screen and (min-width: 1140px) {
     #k-container,.im-m-tags {
         width: 90%;
     }
