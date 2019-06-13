@@ -52,6 +52,7 @@
             <header class="im-head">
                 <h3 class="im-title">最多浏览</h3>
             </header>
+
             <ul>
                 <@categoryTag method="list">
                     <#list categories as category>

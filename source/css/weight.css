@@ -417,6 +417,7 @@ aside .im-weight-block-3:not(:first-child) {
     .im-weight-block-2:hover .im-card-2-img img {
         -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
+
     }
 
 }
