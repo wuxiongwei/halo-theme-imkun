@@ -237,58 +237,44 @@ form {
 
 .im-profile {
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
+    height: 140px;
 }
-.im-profile .im-photo {
-    flex: 1;
-}
-.im-profile .im-photo img {
-    flex: 2;
-    width:100px;
-    height:100px;
+.im-profile .im-info {
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    border-radius: 50%;
+    height: 100px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.11);
+}
+.im-photo {
+    flex:1;
     margin-top: 20px;
-    margin-bottom: -5px;
+    margin-left: 10px;
 }
-.im-profile .im-photo .im-blogger {
-    font-size: 1.5rem !important;;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.im-profile .im-blog-article-info {
-}
-.im-profile .article-info {
-    display: flex;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.im-profile .article-info>div {
-    flex: 1;
-}
-.im-profile .my-info {
-    display: flex;
-    font-size: 1.3rem;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-.im-profile .my-info>div {
-    flex: 1;
-    text-align: center;
-}
-.im-quotes {
-    text-align: center;
-    font-size: 1rem !important;
-}
-.profile-num {
-    font-size: 1.1rem !important;
+.im-photo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
+.im-profile .im-info .im-signature {
+    flex: 3;
+    padding: 10px;
+}
+
+.im-profile .im-skills {
+    display: flex;
+    margin-top: 10px;
+}
+
+.im-profile .im-skills div {
+    flex: 1;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+im-profile .im-myinfo .im-signature .im-name {
+    font-size: 1.02rem;
+}
 
 
 
@@ -310,6 +296,43 @@ form {
 }
 .im-m-tags>div>div>a {
     text-transform: uppercase;
+}
+
+.im-classify {
+    margin-top: 20px;
+    background-color: #fff;
+}
+.im-classify .im-classify-title {
+    display: flex;
+}
+.im-classify .im-classify-title>div {
+    position: relative;
+     flex: 1;
+    padding-left: 10px;
+ }
+.im-classify .im-classify-title>div:first-child::before {
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    width: 55px;
+    content: '';
+    border-bottom: 2px solid #e2e5eb;
+}
+.im-classify .im-category {
+}
+.im-classify .im-category {
+    background-color: #fff;
+}
+.im-classify .im-category ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.im-classify .im-category ul li{
+    padding-left: 10px;
+}
+.im-classify .im-category ul li:not(:first-child){
+    margin-top: 10px;
 }
 @media only screen and (max-width: 500px) {
     /*header#navbar {*/

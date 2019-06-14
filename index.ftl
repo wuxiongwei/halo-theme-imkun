@@ -10,72 +10,79 @@
 
 <div id="k-container">
     <aside>
-        <div class="im-profile">
-            <div class="im-photo">
-                <img src="http://localhost:8090/upload/2019/6/anthony-delanoix-222456-unsplash-a736a9f5c4724cc3b6eea75e53811bb4.jpg"
-                     alt="">
-                <div class="im-blogger">Quinn</div>
-            </div>
-            <div class="im-quotes">Action speak load than words.</div>
-            <div class="im-blog-article-info">
-                <div class="article-info">
-                    <div>
-                       <div class="post-count-title">POSTS</div>
-                        <div class="post-count-num profile-num">100</div>
-                    </div>
-                    <div>
-                        <div class="post-cate-title">CATEGORIES</div>
-                        <div class="post-cate profile-num">100</div>
-                    </div>
-                    <div>
-                        <div class="post-tags-title">TAGS</div>
-                        <div class="post-count profile-num">100</div>
-                    </div>
+        <div class="im-profile im-shadow">
+            <div class="im-info">
+                <div class="im-photo">
+                    <img src="http://localhost:8090/upload/2019/6/anthony-delanoix-222456-unsplash-a736a9f5c4724cc3b6eea75e53811bb4.jpg"
+                         alt="">
+                </div>
+                <div class="im-signature">
+                    <div class="im-name">Quinn</div>
+                    <div class="signature gray">Actions speak load than words</div>
                 </div>
             </div>
-            <div class="my-info">
-                <div>
-                    <a href="#"><i class="fas fa-envelope"></a></i>
-                </div>
-                <div>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
-                <div>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
-                <div>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
+            <div class="im-skills">
+                <div><i class="fab fa-java"></i></div>
+                <div><i class="fab fa-centos"></i></div>
+                <div><i class="fab fa-python"></i></div>
+                <div><i class="fas fa-seedling"></i></div>
             </div>
         </div>
-        <div class="im-weight-block-cate im-shadow animated fadeInLeft">
-            <header class="im-head">
-                <h3 class="im-title">最多浏览</h3>
-            </header>
+        <div class="im-classify  im-shadow">
+            <div class="im-classify-title">
+                <div>专题</div>
+            </div>
+            <div class="im-category">
+                <ul>
+                    <@categoryTag method="list">
+                        <#list categories as category>
+                            <li>
+                                <a href="${context!}/categories/${category.slugName}">${category.name}(${category.postCount!0})</a>
+                            </li>
+                        </#list>
+                    </@categoryTag>
+                </ul>
+            </div>
+            <div class="im-tags"></div>
 
-            <ul>
-                <@categoryTag method="list">
-                    <#list categories as category>
-                        <li>
-                            <a href="${context!}/categories/${category.slugName}">${category.name}(${category.postCount!0})</a>
-                        </li>
-                    </#list>
-                </@categoryTag>
-            </ul>
         </div>
-<#--        <div class="im-weight-block-tags">-->
-<#--            <h1>标签</h1>-->
-<#--            <ul>-->
-<#--                <@tagTag method="list">-->
-<#--                    <#list tags as tag>-->
-<#--                        <li>-->
-<#--                            <a href="${context!}/tags/${tag.slugName}">${tag.name}(${tag.postCount!0})</a>-->
-<#--                        </li>-->
-<#--                    </#list>-->
-<#--                </@tagTag>-->
-<#--            </ul>-->
-<#--        </div>-->
 
+        <div class="im-classify  im-shadow">
+            <div class="im-classify-title">
+                <div>标签</div>
+            </div>
+            <div class="im-category">
+                <ul>
+                    <@tagTag method="list">
+                        <#list tags as tag>
+                            <li>
+                                <a href="${context!}/tags/${tag.slugName}">${tag.name}(${tag.postCount!0})</a>
+                            </li>
+                        </#list>
+                    </@tagTag>
+                </ul>
+            </div>
+            <div class="im-tags"></div>
+
+        </div>
+        <div class="im-classify  im-shadow">
+            <div class="im-classify-title">
+                <div>Links</div>
+            </div>
+            <div class="im-category">
+                <ul>
+                    <@linkTag method="list">
+                        <#if links?? && links?size gt 0>
+                            <#list links as link>
+                                <li>🔒 <a href="${link.url}" target="_blank">${link.name}</a></li>
+                            </#list>
+                        </#if>
+                    </@linkTag>
+                </ul>
+            </div>
+            <div class="im-tags"></div>
+
+        </div>
         <div class="im-weight-block-1 im-shadow animated fadeInLeft">
             <header class="im-head">
                 <h3 class="im-title">最多浏览</h3>
