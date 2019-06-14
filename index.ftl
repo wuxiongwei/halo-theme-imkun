@@ -116,48 +116,7 @@
         </div>
     </div>
     <aside>
-
-<#--        <ul class="im-tags">-->
-<#--            <@tagTag method="list">-->
-<#--                <#list tags as tag>-->
-<#--                    <li class="im-shadow">-->
-<#--                        <a href="${context!}/tags/${tag.slugName}">-->
-<#--                            <div>-->
-<#--                                <#if tag.name == "markdown">-->
-<#--                                    <div class="im-icon" ><i class="fab fa-markdown"></i></div>-->
-<#--                                <#elseif tag.name == "code">-->
-<#--                                    <div class="im-icon" ><i class="fab fa-codiepie"></i></i></div>-->
-<#--                                <#elseif tag.name == "html">-->
-<#--                                    <div class="im-icon" ><i class="fab fa-html5"></i></div>-->
-<#--                                <#elseif tag.name == "css">-->
-<#--                                    <div class="im-icon" ><i class="fab fa-css3-alt"></i></div>-->
-<#--                                <#elseif tag.name == "js" >-->
-<#--                                    <div class="im-icon" ><i class="fab fa-node-js"></i></div>-->
-<#--                                <#elseif tag.name == "linux" >-->
-<#--                                    <div class="im-icon" ><i class="fab fa-linux"></i></div>-->
-<#--                                <#elseif tag.name == "ubuntu" >-->
-<#--                                    <div class="im-icon" ><i class="fab fa-ubuntu"></i></div>-->
-<#--                                <#elseif tag.name == "suse" >-->
-<#--                                    <div class="im-icon" ><i class="fab fa-suse"></i></div>-->
-<#--                                <#elseif tag.name == "fedora" >-->
-<#--                                    <div class="im-icon" ><i class="fab fa-fedora"></i>/div>-->
-<#--                                <#elseif tag.name == "centos" >-->
-<#--                                    <div class="im-icon" ><i class="fab fa-centos"></i></div>-->
-<#--                                <#elseif tag.name == "java" >-->
-<#--                                    <div class="im-icon" ><i class="fab fa-java"></i></div>-->
-<#--                                <#else >-->
-<#--                                        <div class="im-icon" ><i class="fab <@fun.randBgIco />"></i></div>-->
-<#--                                </#if>-->
-<#--                            </div>-->
-<#--                            <div class="im-label">-->
-<#--                                ${tag.name}(${tag.postCount!0})-->
-<#--                            </div>-->
-<#--                        </a>-->
-<#--                    </li>-->
-<#--                </#list>-->
-<#--            </@tagTag>-->
-<#--        </ul>-->
-        <@postTag method="latest" top="4">
+        <@postTag method="latest" top="5">
             <#list posts as post>
                 <@article_card post></@article_card>
             </#list>

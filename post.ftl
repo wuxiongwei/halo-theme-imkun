@@ -56,6 +56,11 @@
             </div>
     </div>
     <aside>
+        <@postTag method="latest" top="1">
+            <#list posts as post>
+                <@article_card post></@article_card>
+            </#list>
+        </@postTag>
         <div>
             <div id="directory" class="animated fadeInRight"></div>
         </div>
