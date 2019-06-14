@@ -13,8 +13,8 @@
         <div class="im-profile im-shadow">
             <div class="im-info">
                 <div class="im-photo">
-                    <img src="http://localhost:8090/upload/2019/6/anthony-delanoix-222456-unsplash-a736a9f5c4724cc3b6eea75e53811bb4.jpg"
-                         alt="">
+                    <img src="${options.blog_logo!}"
+                         alt="${options.blog_title!}">
                 </div>
                 <div class="im-signature">
                     <div class="im-name">Quinn</div>
@@ -106,6 +106,7 @@
 <#--                </@tagTag>-->
 <#--            </div>-->
 <#--        </div>-->
+        <#include "module/widget/slideshow.ftl">
         <div id="article-post">
             <#list posts.content as post>
                 <@post_card post></@post_card>
@@ -116,11 +117,22 @@
         </div>
     </div>
     <aside>
-        <@postTag method="latest" top="5">
-            <#list posts as post>
-                <@article_card post></@article_card>
-            </#list>
-        </@postTag>
+        <@tagTag method="list">
+                <#assign randFactor=randomMethod(0,tags?size)/>
+                <@postTag method="listByTagId" tagId="${randFactor}">
+                        <#if posts?size == 0>
+                        <@postTag method="latest" top="5">
+                            <#list posts as post>
+                                <@article_card post></@article_card>
+                            </#list>
+                        </@postTag>
+                    <#else >
+                        <#list posts as post>
+                            <@article_card post></@article_card>
+                        </#list>
+                    </#if>
+                </@postTag>
+        </@tagTag>
     </aside>
 </div>
 <#include "module/footer.ftl" />
