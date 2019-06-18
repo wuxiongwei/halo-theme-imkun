@@ -17,7 +17,7 @@
             </#list>
         </div>
         <div id="index-page">
-            <#include "module/index-page.ftl">
+            <#include "module/paging/category-page.ftl">
         </div>
     </div>
     <aside>

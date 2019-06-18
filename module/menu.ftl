@@ -1,4 +1,4 @@
-<header class="navbar">
+<header class="navbar animated slideInDown">
     <div class="im-menu">
         <div class="im-inner-menu">
             <div class="im-flex">

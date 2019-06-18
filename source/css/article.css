@@ -72,7 +72,9 @@
 aside {
     flex: 3;
 }
-
+.inner-content {
+    display: flex;
+}
 #k-content {
     flex: 7;
     margin-right: 30px;
@@ -260,7 +262,10 @@ form {
     flex: 3;
     padding: 10px;
 }
-
+.im-profile .im-info .im-signature .im-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
 .im-profile .im-skills {
     display: flex;
     margin-top: 10px;
@@ -268,7 +273,7 @@ form {
 
 .im-profile .im-skills div {
     flex: 1;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 

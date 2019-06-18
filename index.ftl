@@ -10,15 +10,15 @@
 
 <div id="k-container">
     <aside>
-        <div class="im-profile im-shadow">
+        <div class="im-profile im-shadow animated slideInLeft">
             <div class="im-info">
                 <div class="im-photo">
                     <img src="${options.blog_logo!}"
                          alt="${options.blog_title!}">
                 </div>
                 <div class="im-signature">
-                    <div class="im-name">Quinn</div>
-                    <div class="signature gray">Actions speak load than words</div>
+                    <div class="im-name">${user.nickname}</div>
+                    <div class="signature gray">${user.description}</div>
                 </div>
             </div>
             <div class="im-skills">
@@ -28,7 +28,7 @@
                 <div><i class="fas fa-seedling"></i></div>
             </div>
         </div>
-        <div class="im-classify  im-shadow">
+        <div class="im-classify  im-shadow animated slideInLeft">
             <div class="im-classify-title">
                 <div>专题</div>
             </div>
@@ -47,7 +47,7 @@
 
         </div>
 
-        <div class="im-classify  im-shadow">
+        <div class="im-classify  im-shadow animated slideInLeft">
             <div class="im-classify-title">
                 <div>标签</div>
             </div>
@@ -94,45 +94,40 @@
             </#list>
         </div>
     </aside>
-    <div id="k-content">
-<#--        <div class="im-m-tags" >-->
-<#--            <div>-->
-<#--                <@tagTag method="list">-->
-<#--                    <#list tags as tag>-->
-<#--                        <div class="<@fun.randBgColor />">-->
-<#--                            <a href="${context!}/tags/${tag.slugName}">${tag.name}</a>-->
-<#--                        </div>-->
-<#--                    </#list>-->
-<#--                </@tagTag>-->
-<#--            </div>-->
-<#--        </div>-->
-        <#include "module/widget/slideshow.ftl">
-        <div id="article-post">
-            <#list posts.content as post>
-                <@post_card post></@post_card>
-            </#list>
+    <div class="r-container">
+        <div class="slideshow">
+            <#include "module/widget/slideshow.ftl">
         </div>
-        <div id="index-page">
-            <#include "module/index-page.ftl">
-        </div>
-    </div>
-    <aside>
-        <@tagTag method="list">
-                <#assign randFactor=randomMethod(0,tags?size)/>
-                <@postTag method="listByTagId" tagId="${randFactor}">
-                        <#if posts?size == 0>
-                        <@postTag method="latest" top="5">
-                            <#list posts as post>
-                                <@article_card post></@article_card>
-                            </#list>
+        <div class="inner-content">
+            <div id="k-content">
+                <div id="article-post">
+                    <#list posts.content as post>
+                        <@post_card post></@post_card>
+                    </#list>
+                </div>
+                <div id="index-page">
+                    <#include "module/paging/index-page.ftl">
+                </div>
+            </div>
+            <aside>
+                <@tagTag method="list">
+                        <#assign randFactor=randomMethod(0,tags?size)/>
+                        <@postTag method="listByTagId" tagId="${randFactor}">
+                                <#if posts?size == 0>
+                                <@postTag method="latest" top="5">
+                                    <#list posts as post>
+                                        <@article_card post></@article_card>
+                                    </#list>
+                                </@postTag>
+                            <#else >
+                                <#list posts as post>
+                                    <@article_card post></@article_card>
+                                </#list>
+                            </#if>
                         </@postTag>
-                    <#else >
-                        <#list posts as post>
-                            <@article_card post></@article_card>
-                        </#list>
-                    </#if>
-                </@postTag>
-        </@tagTag>
-    </aside>
+                </@tagTag>
+            </aside>
+            </div>
+    </div>
 </div>
 <#include "module/footer.ftl" />

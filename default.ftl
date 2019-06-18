@@ -47,6 +47,8 @@
         <meta property="og:image:height" content="666" />
         <meta name="generator" content="Halo 0.0.7" />
         <link rel="alternate" type="application/rss+xml" title="${options.blog_title}" href="${options.blog_url}/feed.xml" />
+        <link rel="stylesheet" href="${static!}/source/css/animate.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
         <#if post??>
             <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>

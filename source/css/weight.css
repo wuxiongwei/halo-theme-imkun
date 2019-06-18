@@ -1,3 +1,24 @@
+/*自定义一个透明度从0到1的动画，它的名称是fade-in*/
+@keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-webkit-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-ms-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-o-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-moz-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
 
 .weight-extra-font-size {
     font-size: 12px;
@@ -17,6 +38,7 @@
 aside .im-weight-block-1:not(:first-child) {
     margin-top: 20px;
 }
+
 
 .im-weight-block-1 .im-head {
     position: relative;
@@ -93,6 +115,7 @@ aside .im-weight-block-1:not(:first-child) {
     left: 189px;
     color: #c3c8d5;
 }
+
 .im-post-list>a {
     color: #000;
 }
@@ -114,6 +137,7 @@ aside .im-weight-block-1:not(:first-child) {
     background-image: linear-gradient(90deg,#0396FF 0%,#a86af9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 .im-weight-block-2 {
     background-color: #fff;
@@ -151,6 +175,23 @@ aside .im-weight-block-1:not(:first-child) {
     padding-bottom: 5px;
     height: 80px;
     font-size: 14px;
+    transition-delay: 0.5s;
+    transition: all .4s;
+    opacity: 0;
+    transition: all .4s;
+
+    animation: fade-in 1s ease 0s 1;    /*调用名称为fade-in的动画，全程动画显示时间4S，进入方式为ease，延时0S进入，播放次数1次*/
+    -webkit-animation: fade-in 1s ease 0s 1;
+    -moz-animation: fade-in 1s ease 0s 1;
+    -o-animation: fade-in 1s ease 0s 1;
+    -ms-animation: fade-in 1s ease 0s 1;
+
+    /*!*规定动画的最后状态为结束状态*!*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @media (min-width:1440px){
     .im-weight-block-2 .im-card-2-post {
@@ -186,7 +227,9 @@ aside .im-weight-block-1:not(:first-child) {
 .im-card-2-post-footer .im-card-2-post-footer-extra span:first-child {
     padding-right: 30px;
 }
-
+aside .im-weight-block-3:first-child {
+    margin-top: 10px;
+}
 aside .im-weight-block-3:not(:first-child) {
     margin-top: 30px;
 }

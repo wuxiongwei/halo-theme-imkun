@@ -23,7 +23,7 @@
             </#list>
         </div>
         <div id="index-page">
-            <#include "module/index-page.ftl">
+            <#include "module/paging/index-page.ftl">
         </div>
     </div>
     <aside>

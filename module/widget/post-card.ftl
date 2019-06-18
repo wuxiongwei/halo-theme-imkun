@@ -1,5 +1,5 @@
 <#macro post_card post>
-<div class="im-post-list animated fadeInUp">
+<div class="im-post-list animated slideInUp">
     <a href="#" name="${post.createTime?string("yyyy-MM-dd hh:mm:ss")}" id="${post.createTime?string("yyyy-MM-dd hh:mm:ss")}"></a>
     <a href="/archives/${post.url}">
         <div class="im-weight-block-2 im-shadow ">
@@ -10,7 +10,7 @@
                  </#if>
             </div>
             <div class="im-card-2-post">
-                <div class="im-card-2-post-title weight-title">
+                <div class="im-card-2-post-title weight-title animated slideInUp" >
                     ${post.title}
                 </div>
                 <div class="im-card-2-post-content gray">

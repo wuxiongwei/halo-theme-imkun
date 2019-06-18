@@ -16,7 +16,7 @@
 
 <body>
 
-<div class="blog-slider">
+<div class="blog-slider animated slideInRight">
     <div class="blog-slider__wrp swiper-wrapper">
 
 <#--        <@categoryTag method="list">-->
@@ -85,7 +85,6 @@
     </div>
     <div class="blog-slider__pagination"></div>
 </div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
 
 
