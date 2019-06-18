@@ -12,7 +12,7 @@
             <#if post.visits??>
                 <b class="im-viewers weight-extra-font-size">
                     <i class="fa fa-eye" style="padding-right: 5px;"></i>
-                    ${post.commentCount}
+                    ${post.visits}
                 </b>
             </#if>
         </a>

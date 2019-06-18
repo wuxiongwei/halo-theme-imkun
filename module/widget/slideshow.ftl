@@ -42,7 +42,7 @@
 
         <@photoTag method="list">
             <#list photos as photo>
-                <#if photo_index < 2>
+                <#if photo_index < 5>
                 <div class="blog-slider__item swiper-slide">
                     <div class="blog-slider__img">
                         <img src="${photo.url}" alt="${photo.name}">
@@ -61,7 +61,7 @@
 
         <div class="blog-slider__item swiper-slide">
             <div class="blog-slider__img">
-                <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
+                <img src="https://i.loli.net/2019/06/18/5d086f9a391d070881.jpg" alt="">
             </div>
             <div class="blog-slider__content">
                 <span class="blog-slider__code">26 December 2019</span>
@@ -72,7 +72,7 @@
         </div>
         <div class="blog-slider__item swiper-slide">
             <div class="blog-slider__img">
-                <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
+                <img src="https://www.imkun.dev/upload/2019/6/screenshot-b1085afcefba4b328e287685675ead60.jpg" alt="">
             </div>
             <div class="blog-slider__content">
                 <span class="blog-slider__code">26 December 2019</span>
@@ -97,7 +97,8 @@
         pagination: {
             el: '.blog-slider__pagination',
             clickable: true,
-        }
+        },
+        loop:true
     });
 </script>
 

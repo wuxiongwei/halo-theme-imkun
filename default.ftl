@@ -52,7 +52,7 @@
 
         <#if post??>
             <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
-            <link rel="stylesheet" type="text/css" href="${static!}/assets/prism/css/prism-${options.casper_general_code_pretty!'duotone-space'}.css" />
+            <link rel="stylesheet" type="text/css" href="${static!}/assets/prism/css/prism-${options.casper_general_code_pretty!'dracula'}.css" />
             <script type="text/javascript" src="${static!}/assets/prism/js/prism.js"></script>
             <link rel="stylesheet" href="${static!}/source/css/post.css">
             <script type="text/javascript" src="${static!}/source/js/post.js"></script>

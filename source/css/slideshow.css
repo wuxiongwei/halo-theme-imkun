@@ -42,7 +42,7 @@
     }
 }
     .blog-slider {
-        height: 250px;
+        height: 220px;
         margin-bottom: 20px;
     }
 .blog-slider__item {
@@ -113,7 +113,7 @@
     /*background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);*/
     /*box-shadow: 3px 4px 12px 0 rgba(0, 0, 0, .2);*/
     border-radius: 2px;
-    /*transform: translateX(-40px);*/
+    transform: translateX(-15px);
     overflow: hidden;
 }
 /*.blog-slider__img:after {*/
