@@ -40,26 +40,34 @@
 <#--            </@postTag>-->
 <#--        </@categoryTag>-->
 
+        <@photoTag method="list">
+            <#list photos as photo>
+                <#if photo_index < 2>
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="${photo.url}" alt="${photo.name}">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">${photo.takeTime?string["EEE MMM d"]}</span>
+                        <div class="blog-slider__title">${photo.name}</div>
+                        <div class="blog-slider__text">${photo.description}</div>
+                        <a href="/photos" class="blog-slider__button">VIEW MORE</a>
+                    </div>
+                </div>
+                </#if>
+            </#list>
+        </@photoTag>
+
 
         <div class="blog-slider__item swiper-slide">
             <div class="blog-slider__img">
-                <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg" alt="">
-            </div>
-            <div class="blog-slider__content">
-                <span class="blog-slider__code">26 December 2019</span>
-                <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
-                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-            </div>
-        </div>
-
-        <div class="blog-slider__item swiper-slide">
-            <div class="blog-slider__img">
                 <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
             </div>
             <div class="blog-slider__content">
                 <span class="blog-slider__code">26 December 2019</span>
                 <div class="blog-slider__title">Lorem Ipsum Dolor</div>
                 <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                <a href="#" class="blog-slider__button">READ MORE</a>
             </div>
         </div>
         <div class="blog-slider__item swiper-slide">
@@ -70,16 +78,7 @@
                 <span class="blog-slider__code">26 December 2019</span>
                 <div class="blog-slider__title">Lorem Ipsum Dolor</div>
                 <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-            </div>
-        </div>
-        <div class="blog-slider__item swiper-slide">
-            <div class="blog-slider__img">
-                <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
-            </div>
-            <div class="blog-slider__content">
-                <span class="blog-slider__code">26 December 2019</span>
-                <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                <a href="#" class="blog-slider__button">READ MORE</a>
             </div>
         </div>
     </div>
