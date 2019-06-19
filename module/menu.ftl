@@ -4,7 +4,7 @@
             <div class="im-flex">
                 <div class="im-menus">
                     <ul>
-                        <li><a href="/">${options.blog_title!}</a></li>
+                        <li><a href="/" class="blog_title">${options.blog_title!}</a></li>
                         <@menuTag method="list">
                                 <#list menus?sort_by('priority') as menu>
                                     <li><a href="${menu.url}" target="${menu.target!'_blank'}">${menu.name}</a></li>

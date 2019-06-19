@@ -58,7 +58,7 @@
             <link rel="stylesheet" href="${static!}/source/css/post.css">
             <script type="text/javascript" src="${static!}/source/js/post.js"></script>
         </#if>
-
+        <script type="text/javascript" src="${static!}/source/plugins/bafflejs/baffle.min.js"></script>
     </head>
     <body class="${body_class}">
         <div id="outer-container">

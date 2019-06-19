@@ -213,4 +213,15 @@
             </div>
     </div>
 </div>
+<script type="application/javascript">
+    $("document").ready(function () {
+        // With options
+        b = baffle('.blog_title', {
+            characters: '${options.blog_title!}',
+            speed: 75
+        });
+
+        b.reveal(1000);
+    });
+</script>
 <#include "module/footer.ftl" />
