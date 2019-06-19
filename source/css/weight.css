@@ -80,6 +80,8 @@ aside .im-weight-block-1:not(:first-child) {
     transition: all .3s ease;
     border-radius: 2px;
     box-shadow: 3px 4px 12px 0 rgba(0, 0, 0, .2);
+    background-position: center;
+    background-size: cover;
 }
 
 .im-weight-block-1 .im-list .im-link:hover .im-ava {
@@ -127,7 +129,7 @@ aside .im-weight-block-1:not(:first-child) {
     margin-top: 20px;
 }
 
-.im-weight-block-2:hover .im-card-2-img img{
+.im-weight-block-2:hover .im-card-2-img > div{
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
     transform: scale(1.03);
@@ -151,7 +153,7 @@ aside .im-weight-block-1:not(:first-child) {
     position: relative;
 }
 
-.im-weight-block-2 .im-card-2-img img{
+.im-weight-block-2 .im-card-2-img > div{
     position: absolute;
     top: 15px;
     left: -10px;
@@ -161,6 +163,8 @@ aside .im-weight-block-1:not(:first-child) {
     transition: all .3s ease;
     border-radius: 2px;
     box-shadow: 3px 4px 12px 0 rgba(0, 0, 0, .2);
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 .im-weight-block-2 .im-card-2-post {
     flex: 3.7;

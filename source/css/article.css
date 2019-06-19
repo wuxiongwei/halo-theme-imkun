@@ -276,9 +276,19 @@ form {
     font-size: 1.3rem;
     text-align: center;
 }
+.im-profile .im-skills div svg:not(:root) {
+    overflow: hidden;
+    height: 22px;
+}
+.im-profile .im-skills div a {
+    color: #555555;
+}
+.im-profile .im-skills div a:hover {
+    color: #333333;
+}
 
 
-im-profile .im-myinfo .im-signature .im-name {
+.im-profile .im-myinfo .im-signature .im-name {
     font-size: 1.02rem;
 }
 

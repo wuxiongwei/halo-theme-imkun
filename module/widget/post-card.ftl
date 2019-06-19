@@ -5,8 +5,7 @@
         <div class="im-weight-block-2 im-shadow ">
             <div class="im-card-2-img">
                  <#if post.thumbnail??>
-                <img src="${post.thumbnail}"
-                     alt="${post.title}">
+                     <div style="background-image: url(${post.thumbnail})"></div>
                  </#if>
             </div>
             <div class="im-card-2-post">

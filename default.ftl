@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="${static!}/source/css/weight.css" />
         <link rel="stylesheet" href="${static!}/source/css/menu.css" />
         <link rel="stylesheet" href="${static!}/source/css/article.css" />
+        <link rel="stylesheet" href="${static!}/source/plugins/simptip/simptip.min.css" />
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito'>
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"

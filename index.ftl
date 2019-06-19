@@ -22,10 +22,93 @@
                 </div>
             </div>
             <div class="im-skills">
-                <div><i class="fab fa-java"></i></div>
-                <div><i class="fab fa-centos"></i></div>
-                <div><i class="fab fa-python"></i></div>
-                <div><i class="fas fa-seedling"></i></div>
+                <#if settings.twitter??>
+                    <div>
+                        <a class="social-link social-link-tw simptip-position-top simptip-movable" data-tooltip="TWITTER" href="https://twitter.com/${settings.twitter}" target="_blank" rel="noopener">
+                            <#include "module/icons/twitter.ftl">
+                        </a>
+                    </div>
+                </#if>
+
+                <#if settings.facebook??>
+                     <div>
+                    <a class="social-link social-link-fb simptip-position-top simptip-movable" data-tooltip="FACKBOOK" href="https://www.facebook.com/${settings.facebook}" target="_blank" rel="noopener">
+                        <#include "module/icons/facebook.ftl">
+                    </a>
+                    </div>
+                </#if>
+
+                <#if settings.instagram??>
+                    <div>
+                    <a class="social-link social-link-fb simptip-position-top simptip-movable" data-tooltip="INSTAGRAM" href="https://www.instagram.com/${settings.instagram}" target="_blank" rel="noopener">
+                        <#include "module/icons/instagram.ftl">
+                    </a>
+                    </div>
+                </#if>
+
+                <#if settings.dribbble??>
+                    <div>
+                    <a class="social-link social-link-fb simptip-position-top simptip-movable" data-tooltip="DRIBBBLE" href="https://dribbble.com/${settings.dribbble}" target="_blank" rel="noopener">
+                        <#include "module/icons/dribbble.ftl">
+                    </a>
+                    </div>
+                </#if>
+
+                <#if settings.weibo??>
+                    <div>
+                    <a class="social-link social-link-fb simptip-position-top simptip-movable" data-tooltip="WEIBO" href="https://weibo.com/${settings.weibo}" target="_blank" rel="noopener">
+                        <#include "module/icons/weibo.ftl">
+                    </a>
+                    </div>
+                </#if>
+
+                <#if settings.qq??>
+                    <div>
+                    <a class="social-link social-link-fb simptip-position-top simptip-movable" data-tooltip="QQ" href="tencent://message/?uin=${settings.qq}&Site=&Menu=yes" target="_blank" rel="noopener">
+                        <#include "module/icons/qq.ftl">
+                    </a>
+                    </div>
+                </#if>
+
+                <#if settings.telegram??>
+                    <div>
+                    <a class="social-link social-link-fb simptip-position-top simptip-movable" data-tooltip="TELEGRAM" href="https://t.me/${settings.telegram}" target="_blank" rel="noopener">
+                        <#include "module/icons/telegram.ftl">
+                    </a>
+                    </div>
+                </#if>
+
+                <#if settings.email??>
+                    <div>
+                    <a class="social-link social-link-fb simptip-position-top simptip-movable" data-tooltip="EMAIL" href="mailto:${settings.email}" target="_blank" rel="noopener">
+                        <#include "module/icons/email.ftl">
+                    </a>
+                    </div>
+                </#if>
+
+                <#if settings.github??>
+                    <div>
+                    <a class="social-link social-link-fb simptip-position-top simptip-movable" data-tooltip="GITHUB" href="https://github.com/${settings.github}" target="_blank" rel="noopener">
+                        <#include "module/icons/github.ftl">
+                    </a>
+                    </div>
+                </#if>
+
+                <#if settings.cnblog??>
+                    <div>
+                    <a class="social-link social-link-fb simptip-position-top simptip-movable" data-tooltip="CNBLOG" href="https://www.cnblogs.com/${settings.cnblog}/" target="_blank" rel="noopener">
+                        <#include "module/icons/cnblog.ftl">
+                    </a>
+                    </div>
+                </#if>
+
+                <#if settings.stackoverflow??>
+                    <div>
+                    <a class="social-link social-link-fb simptip-position-top simptip-movable" data-tooltip="STACKOVERFLOW" href="https://stackoverflow.com/users/${settings.stackoverflow}" target="_blank" rel="noopener">
+                        <#include "module/icons/stackoverflow.ftl">
+                    </a>
+                    </div>
+                </#if>
             </div>
         </div>
         <div class="im-classify  im-shadow animated slideInLeft">
