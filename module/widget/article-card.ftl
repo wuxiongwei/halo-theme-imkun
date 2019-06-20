@@ -12,7 +12,7 @@ transform-origin: center top;">
             </#if>
         </div>
         <div class="im-weight-3-content">
-            <div class="im-weight-3-content-date gray extra-1-font-size">${post.createTime?string("yyyy-MM-dd")}</div>
+            <div class="im-weight-3-content-date gray extra-1-font-size">${post.editTime?string["EEE MMM d"]}</div>
             <div class="im-weight-3-content-article">
                 <div class="weight-title">
                     <a href="/archives/${post.url}"> ${post.title}</a>

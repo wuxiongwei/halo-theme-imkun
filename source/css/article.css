@@ -69,16 +69,22 @@
 
 
 
-aside {
+aside{
     flex: 3;
+}
+.r-container {
+    flex: 7;
 }
 .inner-content {
     display: flex;
 }
 #k-content {
-    flex: 7;
+    flex: 7.15;
     margin-right: 30px;
     margin-left: 40px;
+}
+.inner-content aside {
+    flex: 2.85 !important;
 }
 
 footer {
