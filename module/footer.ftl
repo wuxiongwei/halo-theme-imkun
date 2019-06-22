@@ -3,14 +3,14 @@
         <div class="f-content">
             <div class="f-level">
                 <div class="f-level-start">
-                    <a href="#">
-                        <img src="https://blog.zhangruipeng.me/hexo-theme-icarus/images/logo.svg" alt="">
-                    </a>
+<#--                    <a href="#">-->
+<#--                        <img src="https://blog.zhangruipeng.me/hexo-theme-icarus/images/logo.svg" alt="">-->
+<#--                    </a>-->
                     <p>
-                        © 2019 PPOffice Powered by
-                        <a href="#">Kun</a>
+                        © 2019  Powered by
+                        <a href="${context!}">Kun</a>
                         &
-                        <a href="#">Icarus</a>
+                        <a href="https://github.com/halo-dev/halo">Halo</a>
                     </p>
                 </div>
                 <div class="f-level-end">
