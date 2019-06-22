@@ -24,7 +24,7 @@
                                         class="fab fa-creative-commons-by"></i></a></p>
                         <p class="control"><a class="button is-white is-large" target="_blank"
                                               title="Download on GitHub"
-                                              href="http://github.com/ppoffice/hexo-theme-icarus"><i
+                                              href="https://github.com/imkundev"><i
                                         class="fab fa-github"></i></a></p></div>
                 </div>
             </div>
