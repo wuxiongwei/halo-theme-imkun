@@ -6,8 +6,7 @@ transform-origin: center top;">
         <div class="im-weight-3-image">
             <#if post.thumbnail??>
             <a href="/archives/${post.url}">
-                <img src="${post.thumbnail}"
-                     alt="${post.title}">
+                <div class="cover" style="background-image: url(${post.thumbnail});" ></div>
             </a>
             </#if>
         </div>
