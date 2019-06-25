@@ -134,6 +134,12 @@ aside .im-weight-block-1:not(:first-child) {
     -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
+.im-weight-block-2 .im-card-2-post-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 350px;
+}
 .im-weight-block-2:hover .im-card-2-post-title{
     background-image: -webkit-linear-gradient(0deg,#0396FF 0%,#a86af9 100%);
     background-image: linear-gradient(90deg,#0396FF 0%,#a86af9 100%);
