@@ -156,10 +156,10 @@
 </div>
 <div class="im-weight-block-1 im-shadow animated fadeInLeft">
     <header class="im-head">
-        <h3 class="im-title">最多浏览</h3>
+        <h3 class="im-title">最新文章</h3>
     </header>
     <#list posts.content as post>
-        <#if post_index lt 4 >
+        <#if post_index lt 5 >
             <@articles_card post></@articles_card>
         </#if>
     </#list>
